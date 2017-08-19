@@ -1,6 +1,6 @@
 let express = require("express");
 let app = express();
-let favicon = require("express-favicon");
+let favicon = require("serve-favicon");
 let path = require("path");
 
 app.set("view engine", "ejs");

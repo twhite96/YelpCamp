@@ -39,6 +39,7 @@
     "gulp-util": "^3.0.7",
     "multi-views": "^0.1.1",
     "path": "^0.12.7",
+    "serve-favicon": "^2.4.3",
     "v8-profiler": "^5.5.0"
   }
 }
