@@ -86,6 +86,18 @@ app.get('/campgrounds/:id', function(req, res) {
   });
 });
 
+app.get('/campgrounds/new', function(req, res) {
+  res.render('new.ejs');
+});
+
+app.post('/campgrounds', function(req, res) {
+  var name = req.body.name;
+  var image = req.body.image;
+  var newCampground = { name: name, image: image };
+  campgrounds.push();
+  res.redirect('/campgrounds');
+});
+
 // app.get("*", function(req, res) {
 //   res.render("404");
 // });
