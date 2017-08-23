@@ -8,7 +8,10 @@ var express = require('express'),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/yelp_camp');
+var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/yelp_camp';
+var sessionSecret = process.env.SESSION_SECRET || 'None of your business, mate';
+
+mongoose.connect(databaseURL);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 3000);
