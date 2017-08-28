@@ -25,22 +25,22 @@ var campgroundSchema = new mongoose.Schema({
 
 var Campground = mongoose.model('Campground', campgroundSchema);
 
-Campground.create(
-  {
-    name: 'Camp Reilly',
-    image: 'https://s3.us-east-2.amazonaws.com/yelpcamp96/Camp_Reily.jpg',
-    description:
-      "Great memories here, can host weddings, has a chapel, if you're into that kind of thing."
-  },
-  function(err, campground) {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log('Made a campground');
-      console.log(campground);
-    }
-  }
-);
+// Campground.create(
+//   {
+//     name: 'Camp Reilly',
+//     image: 'https://s3.us-east-2.amazonaws.com/yelpcamp96/Camp_Reily.jpg',
+//     description:
+//       "Great memories here, can host weddings, has a chapel, if you're into that kind of thing."
+//   },
+//   function(err, campground) {
+//     if (err) {
+//       console.log(err);
+//     } else {
+//       console.log('Made a campground');
+//       console.log(campground);
+//     }
+//   }
+// );
 
 app.get('/', function(req, res) {
   res.render('home');
@@ -87,18 +87,6 @@ app.get('/campgrounds/:id', function(req, res) {
       res.render('show', { campground: foundCampground });
     }
   });
-});
-
-app.get('/campgrounds/new', function(req, res) {
-  res.render('new.ejs');
-});
-
-app.post('/campgrounds', function(req, res) {
-  var name = req.body.name;
-  var image = req.body.image;
-  var newCampground = { name: name, image: image };
-  campgrounds.push();
-  res.redirect('/campgrounds');
 });
 
 // app.get("*", function(req, res) {

@@ -58,4 +58,4 @@ typings/
 .env
 
 # Mongo files
-/data/db
+data/db
