@@ -23,7 +23,7 @@ app.use(
 );
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 3000);
-app.use(favicon(path.join(__dirname, '/public/favicon.ico')));
+app.use(favicon(path.join(__dirname, '/public/images/favicon.ico')));
 
 app.get('/', function(req, res) {
   res.render('landing');
