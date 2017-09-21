@@ -4,22 +4,22 @@ var Comment = require('./models/comment');
 var data = [
   {
     name: 'North Fork',
-    image: 'http://photosforclass.com/download/35301859822',
+    image: 'https://photosforclass.com/download/35301859822',
     description: 'Love this beautiful site!'
   },
   {
     name: "Cloud's Rest",
-    image: 'http://photosforclass.com/download/20607281024',
+    image: 'https://photosforclass.com/download/20607281024',
     description: 'Great time, great beer.'
   },
   {
     name: 'Fox Run',
-    image: 'http://photosforclass.com/download/8137270056',
+    image: 'https://photosforclass.com/download/8137270056',
     description: 'Terrible storm while we were there but all in all great site.'
   },
   {
     name: 'Chippewa Lake',
-    image: 'http://photosforclass.com/download/9586944536',
+    image: 'https://photosforclass.com/download/9586944536',
     description: 'Not bad. Cruise ship ruined the peace.'
   }
 ];
