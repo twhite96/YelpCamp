@@ -74,15 +74,14 @@ app.get('/campgrounds/new', function(req, res) {
 app.get('/campgrounds/:id', function(req, res) {
   //find the campground with provided ID
   Campground.findById(req.params.id)
-    .populate(comments)
+    .populate('comments')
     .exec(function(err, foundCampground) {
       if (err) {
         console.log(err);
       } else {
+        console.log(foundCampground);
         //render show template with that campground
-        res.render('show', {
-          campground: foundCampground
-        });
+        res.render('show', { campground: foundCampground });
       }
     });
 });
