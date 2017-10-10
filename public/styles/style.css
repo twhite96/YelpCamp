@@ -1,4 +1,16 @@
-.jumbotron{
-  background-color: rgba(6, 251, 217, .3) !important;
-  color:white;
+/* .jumbotron {
+  background-color: rgba(6, 251, 217, 0.3) !important;
+  color: white;
+} */
+
+.thumbnail img {
+  width: 100%;
+}
+
+.thumbnail {
+  padding: 0;
+}
+
+.caption {
+  padding: 9px;
 }
