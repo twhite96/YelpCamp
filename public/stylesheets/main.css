@@ -58,8 +58,19 @@ body {
 
 .btn-primary {
   background: #06D7D9 !important;
+  border-color: #06D7D9 !important;
 }
 
 .btn-primary:hover {
   background: #06D7D9 !important;
+  border-color: #06D7D9 !important;
+}
+
+.btn {
+  transition: all 0.3s ease !important;
+   /*transform: translateY(4px);*/
+}
+
+.btn:active {
+  box-shadow: 0px 3.5px rgba(0, 0, 0, 0.6) !important;
 }
