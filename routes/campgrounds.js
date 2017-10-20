@@ -3,7 +3,6 @@ var router = express.Router();
 var Campground = require("../models/campground");
 var Comment = require("../models/comment");
 var middleware = require("../middleware");
-var rating = require('../models/rating');
 var geocoder = require('geocoder');
 var {
   isLoggedIn,
@@ -94,7 +93,7 @@ router.get("/new", isLoggedIn, function(req, res) {
   res.render("campgrounds/new");
 });
 
-// SHOW - shows more info about one campground
+//SHOW
 router.get("/:id", function(req, res) {
   //find the campground with provided ID
   Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampground) {
@@ -110,6 +109,7 @@ router.get("/:id", function(req, res) {
     });
   });
 });
+
 
 // EDIT - shows edit form for a campground
 router.get("/:id/edit", isLoggedIn, checkUserCampground, function(req, res) {

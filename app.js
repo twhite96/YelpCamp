@@ -18,8 +18,9 @@ var express     = require("express"),
 require('dotenv').load();
 //requiring routes
 var commentRoutes    = require("./routes/comments"),
-campgroundRoutes = require("./routes/campgrounds"),
-indexRoutes      = require("./routes/index");
+    campgroundRoutes = require("./routes/campgrounds"),
+    // ratingRoutes     = require("./routes/ratings"),
+    indexRoutes      = require("./routes/index");
 
 mongoose.Promise = global.Promise;
 
@@ -42,7 +43,7 @@ app.locals.moment = require('moment');
 
 // passport config
 app.use(require("express-session")({
-  secret: "Once again Rusty wins cutest dog!",
+  secret: "Cats are the cutest things on earth",
   resave: false,
   saveUninitialized: false
 }));
@@ -62,6 +63,7 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
+// app.use("/campgrounds/:id/ratings", ratingRoutes);
 
 app.get('*', function(req, res) {
   res.render('404');

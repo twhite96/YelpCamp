@@ -16,19 +16,19 @@ var campgroundSchema = new mongoose.Schema({
     },
     username: String
   },
-  ratings: [
-     {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Rating"
-     }
-  ],
-  rating: { type: Number, default: 0 },
   comments: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Comment"
     }
-  ]
+  ],
+  // ratings: [
+  //    {
+  //       type: mongoose.Schema.Types.ObjectId,
+  //       ref: "Rating"
+  //    }
+  // ],
+  // rating: { type: Number, default: 0 }
 });
 
 module.exports = mongoose.model("Campground", campgroundSchema);
