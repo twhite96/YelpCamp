@@ -45,26 +45,26 @@ h1 {
 }
 
 .slideshow li:nth-child(1) {
-  background-image: url(https://i.imgur.com/K3mPv14.jpg)
+  background-image: url(https://cdn.tiffanywhite.tech/wp-content/uploads/2017/10/20010109/dan-edwards-38004.jpg)
 }
 .slideshow li:nth-child(2) {
-  background-image: url(https://i.imgur.com/SBEmFpv.jpg);
+  background-image: url(https://cdn.tiffanywhite.tech/wp-content/uploads/2017/10/20010122/pablo-garcia-saldana-275391.jpg);
   animation-delay: 10s;
 }
 .slideshow li:nth-child(3) {
-  background-image: url(https://i.imgur.com/emvhOnb.jpg);
+  background-image: url(https://cdn.tiffanywhite.tech/wp-content/uploads/2017/10/20010130/tegan-mierle-157974.jpg);
   animation-delay: 20s;
 }
 .slideshow li:nth-child(4) {
-  background-image: url(https://i.imgur.com/2LSMCmJ.jpg);
+  background-image: url(https://cdn.tiffanywhite.tech/wp-content/uploads/2017/10/20010141/toa-heftiba-314235.jpg);
   animation-delay: 30s;
 }
 .slideshow li:nth-child(5) {
-  background-image: url(https://i.imgur.com/TVGe0Ef.jpg);
+  background-image: url(https://cdn.tiffanywhite.tech/wp-content/uploads/2017/10/20010159/tommy-lisbin-211935.jpg);
   animation-delay: 40s;
 }
 
-@keyframes imageAnimation { 
+@keyframes imageAnimation {
   0% {
     opacity: 0;
     animation-timing-function: ease-in;
