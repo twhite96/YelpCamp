@@ -3,6 +3,7 @@ var router = express.Router();
 var Campground = require("../models/campground");
 var Comment = require("../models/comment");
 var middleware = require("../middleware");
+var rating = require('../models/rating');
 var geocoder = require('geocoder');
 var {
   isLoggedIn,
