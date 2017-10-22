@@ -13,6 +13,7 @@ var express     = require("express"),
   http = require('http'),
   Campground  = require("./models/campground"),
   Comment     = require("./models/comment"),
+  cloudinary = require('cloudinary'),
   User        = require("./models/user"),
   seedDB      = require("./seeds");
 require('dotenv').load();

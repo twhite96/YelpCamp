@@ -45,22 +45,22 @@ h1 {
 }
 
 .slideshow li:nth-child(1) {
-  background-image: url(https://res.cloudinary.com/hsiblqido/image/upload/v1508653328/dan-edwards-38004-min_kjkgsb.jpg)
+  background-image: cloudinary.image("dan-edwards-38004-min_kjkgsb.jpg", { crop: "fill" });
 }
 .slideshow li:nth-child(2) {
-  background-image: url(https://res.cloudinary.com/hsiblqido/image/upload/v1508653333/pablo-garcia-saldana-275391-min_zq4vuc.jpg);
+  background-image: cloudinary.image("pablo-garcia-saldana-275391-min_zq4vuc.jpg", { crop: "fill" });
   animation-delay: 10s;
 }
 .slideshow li:nth-child(3) {
-  background-image: url(https://res.cloudinary.com/hsiblqido/image/upload/v1508653325/mike-erskine-144525-min_wlt1be.jpg;
+  background-image: cloudinary.image("mike-erskine-144525-min_wlt1be.jpg", { crop: "fill" });
   animation-delay: 20s;
 }
 .slideshow li:nth-child(4) {
-  background-image: url(https://res.cloudinary.com/hsiblqido/image/upload/v1508653329/toa-heftiba-314235-min_nfxnv7.jpg);
+  background-image: cloudinary.image("toa-heftiba-314235-min_nfxnv7.jpg", { crop: "fill" });
   animation-delay: 30s;
 }
 .slideshow li:nth-child(5) {
-  background-image: url(https://res.cloudinary.com/hsiblqido/image/upload/v1508653332/tegan-mierle-157974-min_tedmep.jpg);
+  background-image: cloudinary.image("tegan-mierle-157974-min_tedmep.jpg", { crop: "fill" });
   animation-delay: 40s;
 }
 
