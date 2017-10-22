@@ -46,7 +46,7 @@ router.post("/", isLoggedIn, function(req, res) {
           campground.comments.push(comment);
           campground.save();
           console.log(comment);
-          req.flash('success', 'Created a comment!');
+          req.flash('success', 'Created a comment.');
           res.redirect('/campgrounds/' + campground._id);
         }
       });
@@ -89,7 +89,7 @@ router.delete("/:commentId", isLoggedIn, checkUserComment, function(req, res) {
           req.flash('error', err.message);
           return res.redirect('/');
         }
-        req.flash('error', 'Comment deleted!');
+        req.flash('error', 'Comment deleted.');
         res.redirect("/campgrounds/" + req.params.id);
       });
     }

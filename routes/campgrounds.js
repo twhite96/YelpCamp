@@ -99,7 +99,7 @@ router.get("/:id", function(req, res) {
   Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampground) {
     if (err || !foundCampground) {
       console.log(err);
-      req.flash('error', 'Sorry, that campground does not exist!');
+      req.flash('error', 'Sorry, that campground does not exist.');
       return res.redirect('/campgrounds');
     }
     console.log(foundCampground);
@@ -141,7 +141,7 @@ router.put("/:id", isSafe, function(req, res) {
         req.flash("error", err.message);
         res.redirect("back");
       } else {
-        req.flash("success", "Successfully Updated!");
+        req.flash("success", "Successfully Updated.");
         res.redirect("/campgrounds/" + campground._id);
       }
     });
@@ -164,7 +164,7 @@ router.delete("/:id", isLoggedIn, checkUserCampground, function(req, res) {
           req.flash('error', err.message);
           return res.redirect('/');
         }
-        req.flash('error', 'Campground deleted!');
+        req.flash('error', 'Campground deleted.');
         res.redirect('/campgrounds');
       });
     }
