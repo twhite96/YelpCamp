@@ -5,7 +5,7 @@ module.exports = {
       if(req.isAuthenticated()){
           return next();
       }
-      req.flash('error', 'You must be signed in to do that!');
+      req.flash('error', 'You must be signed in to do that.');
       res.redirect('/login');
   },
   checkUserCampground: function(req, res, next){
@@ -38,14 +38,14 @@ module.exports = {
        }
     });
   },
-  // isAdmin: function(req, res, next) {
-  //   if(req.user.isAdmin) {
-  //     next();
-  //   } else {
-  //     req.flash('error', 'This site is now read only thanks to spam and trolls.');
-  //     res.redirect('back');
-  //   }
-  // },
+  isAdmin: function(req, res, next) {
+    if(req.user.isAdmin) {
+      next();
+    } else {
+      req.flash('error', 'This site is now read only thanks to spam and trolls.');
+      res.redirect('back');
+    }
+  },
   isSafe: function(req, res, next) {
     if(req.body.image.match(/^https:\/\/images\.unsplash\.com\/.*/)) {
       next();

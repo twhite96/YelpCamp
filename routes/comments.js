@@ -3,7 +3,7 @@ const router = express.Router({
   mergeParams: true
 });
 const Campground = require("../models/campground");
-const Comment = require("../models/comment");
+var Comment = require("../models/comment");
 const middleware = require("../middleware");
 const {
   isLoggedIn,
