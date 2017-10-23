@@ -27,6 +27,8 @@ var data = [
       'Raw denim cronut fam man braid portland health goth artisan kickstarter blue bottle irony. Keffiyeh artisan hammock cornhole wayfarers. Mumblecore vinyl tousled meggings before they sold out, godard subway tile try-hard heirloom forage roof party bespoke. Woke before they sold out actually prism roof party, tumblr tote bag. Pork belly roof party hammock organic polaroid four loko selvage shabby chic. Tilde succulents salvia retro, everyday carry forage readymade live-edge pitchfork tote bag plaid. Butcher etsy cornhole, farm-to-table yr sustainable 90s. Wayfarers fashion axe tousled irony drinking vinegar bushwick. Locavore banh mi affogato, forage etsy man braid sustainable disrupt cloud bread portland twee bushwick listicle activated charcoal.'
   }
 ];
+
+//this function is a hot mess
 function seedDB() {
   //remove all campgrounds
   Campground.remove({}, function(err) {
