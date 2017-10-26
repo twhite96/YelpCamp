@@ -59,3 +59,6 @@ typings/
 
 # Mongo files
 data/db
+
+#API keys
+views/campgrounds/show.ejs
