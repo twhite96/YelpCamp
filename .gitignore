@@ -61,4 +61,4 @@ typings/
 data/db
 
 #API keys
-views/campgrounds/show.ejs
+show.ejs
