@@ -52,14 +52,14 @@
     "moment": "^2.19.1",
     "mongoose": "^4.11.14",
     "multi-views": "^0.1.1",
-    "nodemon": "^1.12.1",
+    "nodemon": "^1.14.11",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.2.1",
     "path": "^0.12.7",
     "request": "^2.83.0",
     "serve-favicon": "^2.4.5",
-    "snyk": "^1.49.3",
+    "snyk": "^1.214.0",
     "v8-profiler": "^5.7.0"
   },
   "snyk": true
