@@ -59,7 +59,7 @@
     "path": "^0.12.7",
     "request": "^2.83.0",
     "serve-favicon": "^2.4.5",
-    "snyk": "^1.49.3",
+    "snyk": "^1.83.0",
     "v8-profiler": "^5.7.0"
   },
   "snyk": true
